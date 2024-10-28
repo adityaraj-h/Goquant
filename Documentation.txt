@@ -1,0 +1,79 @@
+API keys:
+
+# How to set up an asymmetric API key?
+
+### 1. Create the public and private key pair
+
+- Can be created using OpenSSL or by Python script below
+
+
+### 2. Creating new API key on Deribit
+
+- Can by created using Front-end interface or Deribit API
+
+
+### 3. Authenticate with an Asymetric API key
+
+- You can authenticate via Deribit Signature Credentials using Shell or Python examples, provided at the end of the article
+
+
+
+## 1. Creating the public and private key pair
+
+To create a public and private key pair you can either use Python script provided further below or use OpenSSL. OpenSSL is an open-source software library that provides tools and libraries for secure communication, implementing the SSL and TLS protocols for encryption, cryptographic functions, and digital certificates.
+
+## OpenSSL
+
+##### Step 1: Make sure that OpenSSL is installed on your OS
+
+##### Windows
+
+**Check if OpenSSL is Installed:**
+
+1. Open Command Prompt or PowerShell.
+2. Type the following command and press Enter: openssl version
+3. If OpenSSL is installed, you will see the version number. If not, proceed to install it.
+
+**Install OpenSSL:**
+
+1. Download the installer from **[this link](https://slproweb.com/products/Win32OpenSSL.html)**.
+2. Choose the version appropriate for your system (Win32 or Win64).
+3. Run the installer and follow the instructions.
+
+##### macOS
+
+**Check if OpenSSL is Installed:**
+
+1. Open Terminal.
+2. Type the following command and press Enter: openssl version
+3. If OpenSSL is installed, you will see the version number. If not, proceed to install it.
+
+**Install OpenSSL:**
+
+1. Use Homebrew to install OpenSSL. If you don’t have Homebrew installed, please refer to **[their official website.](https://brew.sh/)**
+2. Once Homebrew is installed, run: brew install openssl
+3. You may need to add OpenSSL to your PATH. Follow the instructions given by Homebrew after installation to do this.
+
+##### Linux
+
+**Check if OpenSSL is Installed:**
+
+1. Open Terminal.
+2. Type the following command and press Enter: openssl version
+3. If OpenSSL is installed, you will see the version number. If not, proceed to install it.
+
+**Install OpenSSL:**
+
+The installation commands may vary depending on your Linux distribution. Here are the commands for a few common distributions:
+
+**Debian/Ubuntu:**
+
+sudo apt update sudo apt install openssl
+
+**Fedora:**
+
+sudo dnf install openssl
+
+**Arch Linux:**
+
+sudo pacman -S openssl
